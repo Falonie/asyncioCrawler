@@ -1,0 +1,11 @@
+mongoexport --db Falonie --collection boss_recruit_上海_jobs_supplement --type=csv --fields company,work_location,job_description,business_info_company,company_info,homepage,scale,release_time,recruiter,rounds,position,industry,recruiter_title,url --out /home/salesmind/python-date/FalonieRepository2/BossRecruit/boss_recruit_上海_jobs_supplement.csv
+
+mongoexport --db Falonie --collection boss_recruit_闵行_天使轮_jobs --type=csv --fields company,work_location,job_description,business_info_company,company_info,homepage,scale,release_time,recruiter,rounds,position,industry,recruiter_title,url --out /media/salesmind/0002C1F9000B55A8/PycharmProjectsonUbuntu/python-date/FalonieRepository2/BossRecruit/boss_recruit_闵行_天使轮_jobs.csv
+
+mongoexport --db Falonie --collection boss_recruit_闵行_天使轮_filter --type=csv --fields url --out /media/salesmind/0002C1F9000B55A8/PycharmProjectsonUbuntu/python-date/FalonieRepository2/BossRecruit/boss_recruit_闵行_天使轮_filter_url.csv
+
+mongoexport --db Falonie --collection boss_recruit_闵行_未融资_99 --type=csv --fields url --out /home/salesmind/python-date/FalonieRepository2/BossRecruit/boss_recruit_闵行_未融资_99_url.csv
+
+mongodump --archive=boss_recruit_浦东_未融资_天使轮_A轮_99.gz --gzip --db Falonie --collection boss_recruit_浦东_未融资_天使轮_A轮_99
+
+mongorestore --gzip --archive=boss_recruit_上海_filter.gz --db Falonie
